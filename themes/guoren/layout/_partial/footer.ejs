@@ -1,4 +1,18 @@
-<footer class="footer">
-    &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %><br>
-    <%= __('powered_by') %> <a href="http://hexo.io/" target="_blank">Hexo</a>
-</footer>
+<div class="footer">
+  <div class="wrapper">
+    <a class="logo" href="/">
+      <img src="/css/images/logo-white.jpg" style="width: 150px" alt="国仁医疗">
+    </a>
+    <ul>
+      <li class="select"><a href="/">首页</a></li>
+      <li><a href="/about" target="_blank">关于国仁</a></li>
+      <li><a href="/project" target="_blank">项目展示</a></li>
+      <li><a href="/partner" target="_blank">合作单位</a></li>
+      <li><a href="/contact" target="_blank">联系我们</a></li>
+    </ul>
+    <p>
+      Copyright©2015-<%= date(new Date(), 'YYYY') %> Guoren Medical Technology Co.,Ltd. All right Reserved<br>
+      京ICP备 16020039号-1
+    </p>
+  </div>
+</div>
