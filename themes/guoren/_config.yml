@@ -1,4 +1,7 @@
 # Header
 menu:
   Home: /
-  About: /aboutUs
+  About: /about
+  Product: /product
+  partner: /partner
+  contact: /contact
