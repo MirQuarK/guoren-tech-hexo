@@ -1,7 +1,7 @@
 # Header
 menu:
-  Home: /
-  About: /about
-  Product: /product
-  partner: /partner
-  contact: /contact
+  首页: /
+  关于国仁: about
+  项目展示: product
+  合作伙伴: partner
+  联系我们: contact

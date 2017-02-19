@@ -40,6 +40,34 @@ body
 .clear
   clear: both
 
+.row
+  row()
+
+.col1
+  column(1)
+.col2
+  column(2)
+.col3
+  column(3)
+.col4
+  column(4)
+.col5
+  column(5)
+.col6
+  column(6)
+.col7
+  column(7)
+.col8
+  column(8)
+.col9
+  column(9)
+.col10
+  column(10)
+.col11
+  column(11)
+.col12
+  column(12)
+
 .btn
   display: inline-block
   padding: 10px 12px
@@ -81,6 +109,13 @@ body
   .logo
     position: relative
     top: 15px
+    display: inline-block
+    width: 150px
+    height: 39px
+    background-image: url('/css/images/logo.png')
+    background-size: 150px 78px
+    background-position: 0 0
+    background-repeat: no-repeat
   width: 100%
   position: fixed
   z-index: 1
@@ -111,6 +146,8 @@ body
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   border-bottom: 1px solid #ccc
+  .logo
+    background-position: 0 -39px
   ul
     a
       color: #000
@@ -118,6 +155,15 @@ body
 @keyframes colorchange
   from {background-color:rgba(0,0,0,0);}
   to {background-color:rgba(255,255,255,1);}
+
+.header-global 
+  position: relative
+  background-color: #fff
+  .logo
+    background-position: 0 -39px
+  ul
+    a
+      color: #000
 
 .section2
   padding: 80px 0
@@ -225,3 +271,72 @@ body
         color: #a8a8aa
         padding: 0 10px
         text-decoration:none
+
+.banner-wrapper
+  background-image: url('/css/images/banner-top.jpg')
+  background-repeat: no-repeat
+  background-position: center center
+  height: 300px
+  > .wrapper 
+    position: relative
+    .caption
+      position: absolute
+      left: 0
+      top: 240px
+      color: #fff
+    h3
+      font-size: 36px
+      display: inline-block
+      position: relative
+      padding-right: 20px
+      &::after
+        content: ''
+        border-right: 2px solid #e71a28
+        padding-left: 20px
+    span
+      font-size: 24px
+
+.banner-wrapper-product   
+  background-image: url('/css/images/banner-product.jpg')
+  background-repeat: no-repeat
+  background-position: center center
+  height: 418px
+
+.page-about
+  .contact-section
+    background-color: #f5f5f5
+  .platform
+    padding: 70px 0
+  .btn-wrap
+    padding-top: 20px
+
+.text 
+  h3
+    font-size: 28px
+    padding-bottom: 20px
+  p 
+    line-height: 1.8
+
+.page-product
+  .section
+    padding: 70px 0
+  .fiveAdvantage
+    padding: 70px 0;
+    background-color: #f5f5f5
+    li
+      width: 50%
+      float: left
+      position: relative
+      padding: 0 65px 0 65px
+      height: 200px
+      h4
+        font-size: 20px
+        padding-bottom: 5px
+      img
+        width: 50px
+        position: absolute
+        top: 0
+        left: 0
+  .location
+    padding:70px 0
+

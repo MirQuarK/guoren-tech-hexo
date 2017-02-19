@@ -1,0 +1,21 @@
+<%- partial('_partial/head') %>
+<body>
+  <div class="container">
+    <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+    <div class="banner-wrapper">
+      <div class="wrapper">
+        <div class="caption">
+          <h3>联系我们</h3>
+          <span>Contact Us</span>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="text">
+        联系我 么么哒
+      </div>
+    </div>
+    <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+    <%- partial('_partial/foot') %>
+</body>
+</html>

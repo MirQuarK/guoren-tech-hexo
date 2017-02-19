@@ -1,1 +1,43 @@
-aaa
+<%- partial('_partial/head') %>
+<body>
+  <div class="container page-about">
+    <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+    <div class="banner-wrapper">
+      <div class="wrapper">
+        <div class="caption">
+          <h3>关于国仁</h3>
+          <span>About Us</span>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="text">
+        <div style="padding: 70px 0">
+          <p>国仁健康天河云平台作为专业、权威、有公信力的“中国人医学健康大数据平台”，依托绿色、安全的云计算平台和超级计算技术，整合优质医疗健康资源和数据资源，开展基于医学健康数据的规范化采集和云传输、云存储、云共享、云应用服务，做为国内医学大数据采集、存储、挖掘、分析服务和标准的应用示范基地，为公众获取医学健康信息和知识，提供专业可信赖的渠道，为政府卫生等决策提供数据支撑，为医疗机构、科研机构、企业、个人提供可信赖的云平台服务，支撑我国医疗健康大数据的应用创新。</p>
+        </div>
+      </div>
+    </div>
+    <div class="contact-section">
+      <div class="wrapper">
+        <div class="text">
+          <div class="row">
+            <div class="col6">
+              <img style="width: 100%; float: left" src="/css/images/pic-doctors.jpg">
+            </div>
+            <div class="col6">
+              <div class="platform">
+                <h3>平台建设</h3>
+                <p>国人健康天河云平台是由中国医疗保健国际交流促进会医学数据与医学计量分会、国家超级计算天津中心、国仁医疗科技有限公司等单位联合建设。</p>
+                <p class="btn-wrap">
+                  <a class="btn btn-red">加入我们</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+    <%- partial('_partial/foot') %>
+</body>
+</html>
