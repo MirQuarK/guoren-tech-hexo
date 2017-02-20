@@ -1,6 +1,6 @@
 <%- partial('_partial/head') %>
 <body>
-  <div class="container">
+  <div class="container page-contact">
     <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
     <div class="banner-wrapper">
       <div class="wrapper">
@@ -11,8 +11,20 @@
       </div>
     </div>
     <div class="wrapper">
-      <div class="text">
-        联系我 么么哒
+      <div class="row">
+        <div class="col6">
+          <div class="address">
+            <h3>公司总部</h3>
+            <p>地址：北京市海淀区复兴路乙11号梅迪亚中心13楼</p>
+            <p>联系电话：010-68550686</p>
+          </div>
+        </div>
+        <div class="col6">
+          <div class="address">
+            <h3>医学中心</h3>
+            <p>地址：北京市海淀区西四环北路63号馨雅大厦</p>
+          </div>
+        </div>
       </div>
     </div>
     <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
