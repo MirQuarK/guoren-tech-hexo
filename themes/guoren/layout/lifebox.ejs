@@ -1,0 +1,41 @@
+<%- partial('_partial/head') %>
+<body>
+  <div class="container page-lifebox">
+    <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+    <div class="banner-wrapper-lifebox"></div>
+    <div class="wrapper">
+      <div class="section">
+        <div class="row text">
+          <div class="col6" style="text-align: center">
+            <img style="width: 70%" src="/css/images/pic-lifebox.jpg">
+          </div>
+          <div class="col6">
+            <div style="padding: 0 60px 0 0">
+              <h3>建设生命信息保险箱，实现健康智慧管理</h3>
+              <p>为居民建设生命信息保险箱，整合遗传性、表型特征、个人行为、环境要素等数据，最终基于大数据的数字化人体模型提供精准健康评估与预测，建设健康物联网，为健康管理提供个性化、定量化的指导。
+              </p>
+              <p>北京邮电大学特有的信息安全技术，同态密钥加密技术为生命信息保险箱的数据安全提供技术保障。国家超级计算天津中心拥有我国安全等级最高、隐私保护健全的海量数据存储平台，拥有各种大数据挖掘、分析、建模的能力，医学数据与医学计量分会汇聚国内顶级数据分析、计算专家，可提供安全、可信、先进的技术和基础设施保障。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section-bg">
+      <div class="wrapper text">
+        <div class="row">
+          <div class="col6">
+            <h3>医疗数据互联互通</h3>
+            <p>在当地卫生局的支持下，在国人健康云平台上搭建由高血压大数据联合实验室、国家超级计算天津中心的软件、数据专家团队指导建立支持不同医疗机构之间信息共享的系统，提供基于医疗信息协议和数据格式的集成功能和互操作功能，建立以个人健康档案为核心，建设一个互联互通、标准一致的高血压数据平台，对接基层医疗机构、高血压精准诊疗与管理示范中心、当地医院、区卫生局信息系统，实现数据在各自权限下的有序流动。并采用国家网络通信安全重点实验室北京邮电大学团队的同态加密等技术手段，确保个人隐私信息安全。为政府制定政策、医学研究与个体化诊疗提供数据支撑。</p>
+          </div>
+          <div class="col6" style="text-align: center">
+            <img style="width: 70%" src="/css/images/pic-lifebox2.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+    <%- partial('_partial/foot') %>
+  </div>
+</body>
+</html>

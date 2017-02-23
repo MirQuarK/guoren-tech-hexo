@@ -2,6 +2,7 @@
 @import "_variables"
 @import "_util/mixin"
 @import "_util/grid"
+@import "font"
 
 global-reset()
 
@@ -165,6 +166,12 @@ body
     a
       color: #000
 
+.section
+  padding: 70px 0
+
+.section-bg
+  background-color: #f5f5f5
+
 .section2
   padding: 80px 0
   text-align: center
@@ -179,6 +186,18 @@ body
     .num
       padding-top: 20px
       font-size: 36px
+/*      animation: numincrease
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+
+      @keyframes numincrease
+      from {background-color:rgba(0,0,0,0);}
+      to {background-color:rgba(255,255,255,1);}*/
+    .unit
+      padding-left: 5px
+      font-size: 16px
+      font-weight: normal
     .name
       font-weight: bold
   .slogen
@@ -303,6 +322,18 @@ body
   background-position: center center
   height: 418px
 
+.banner-wrapper-lifebox  
+  background-image: url('/css/images/digital-health.jpg')
+  background-repeat: no-repeat
+  background-position: center center
+  height: 418px
+
+.banner-wrapper-psychology
+  background-image: url('/css/images/psychology-banner.jpg')
+  background-repeat: no-repeat
+  background-position: center center
+  height: 418px
+
 .page-about
   .contact-section
     background-color: #f5f5f5
@@ -317,13 +348,12 @@ body
     padding-bottom: 20px
   p 
     line-height: 1.8
+    margin-bottom: 20px
 
 .page-product
   .section
     padding: 70px 0
   .fiveAdvantage
-    padding: 70px 0;
-    background-color: #f5f5f5
     li
       width: 50%
       float: left
@@ -342,8 +372,6 @@ body
     padding:70px 0
 
 .page-partner
-  .section
-    padding: 70px 0
   .partnet-names
     float: left
     width: 35%
@@ -353,7 +381,9 @@ body
       margin: 20px 0
       &:hover
         color: #e71a28
+        font-size: 110%
       &.selected
+        font-size: 110%
         color: #e71a28
         list-style: disc
   .partnet-descs
@@ -376,3 +406,19 @@ body
     h3
       font-size: 20px
       padding-bottom: 25px
+
+.page-psychology
+  .personal-help
+    .col3
+      margin: 30px 0
+      text-align: center
+    h4
+      font-weight: border
+      font-size: 25px
+      line-height: 2
+    .iconfont
+      font-size: 80px
+  .team-help
+    h3
+      padding-bottom: 50px
+
