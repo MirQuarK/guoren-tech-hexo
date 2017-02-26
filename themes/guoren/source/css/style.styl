@@ -124,17 +124,35 @@ body
   border-bottom: 1px solid transparent
   ul
     float: right
-    li
+    > li
       float: left
+      position: relative
+      font-size: 18px
+      &:hover
+        background-color:rgba(255, 255, 255, 0.1)
+        > ul
+          display: block
+        a
+          color: #c82c39
+      > ul
+        display: none
+        position: absolute
+        width: 100%
+        li
+          width: 100%
+          background-color:rgba(255, 255, 255, 0.1)
+          &:hover
+            background-color:rgba(255, 255, 255, 0.3)
+        a
+          width: 100%
+          padding: 15px
+          font-size: 14px
+          text-align: center
     a
+      color: #fff
       display: inline-block
       padding: 20px
-      font-size: 18px
-      color: #fff
       text-decoration:none
-      &:hover
-        color: #c82c39
-        background-color:rgba(255, 255, 255, 0.1)
     li.select
       a
         color: #c82c39
@@ -151,6 +169,12 @@ body
   .logo
     background-position: 0 -39px
   ul
+    > li
+      > ul
+        li
+          background-color:rgba(255, 255, 255, 1)
+          &:hover
+            background-color: #f1f1f1
     a
       color: #000
 
@@ -164,6 +188,15 @@ body
   .logo
     background-position: 0 -39px
   ul
+    > li
+      > ul
+        li
+          background-color:rgba(255, 255, 255, 1)
+    > li.select
+      > ul
+        li
+          a
+            border-bottom: none
     a
       color: #000
 

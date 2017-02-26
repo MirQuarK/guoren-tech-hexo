@@ -5,9 +5,29 @@
     <ul>
       <% for (var i in theme.menu){ %>
         <% if (is_current(theme.menu[i] + '/index.html')) { %>
-        <li class="select"><a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
+        <li class="select">
+          <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+          <% if (theme.menu[i].indexOf('product') !== -1) { %>
+          <ul>
+            <li><a href="/product">健康中心</a></li>
+            <li><a href="/product/lifebox/">健康保险箱</a></li>
+            <li><a href="/product/psychology/">国仁心理</a></li>
+            <li><a href="/product/application/">APP下载</a></li>
+          </ul>
+          <% } %>
+        </li>
         <% } else { %>
-        <li><a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
+        <li>
+          <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+          <% if (theme.menu[i].indexOf('product') !== -1) { %>
+          <ul>
+            <li><a href="/product">健康中心</a></li>
+            <li><a href="/product/lifebox/">健康保险箱</a></li>
+            <li><a href="/product/psychology/">国仁心理</a></li>
+            <li><a href="/product/application/">APP下载</a></li>
+          </ul>
+          <% } %>
+        </li>
         <% } %>
       <% } %>
     </ul>

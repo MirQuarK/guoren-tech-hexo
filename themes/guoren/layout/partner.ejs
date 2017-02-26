@@ -24,7 +24,7 @@
           </li>
         </ul>
         <ul class="partnet-descs">
-          <li class="selected">
+          <li>
             <div class="img-wrapper">
               <img src="/css/images/post-tel-uni.jpg">
             </div>
@@ -44,13 +44,18 @@
           </li>
         </ul>
         <script>
-          $('.partnet-names li').click(function(){
-            $('.partnet-names li').removeClass('selected')
-            $(this).addClass('selected')
-            var i = $('.partnet-names li').index(this)
-            $('.partnet-descs li').removeClass('selected')
-            $('.partnet-descs li').eq(i).addClass('selected')
-          })
+          (function(){
+            $('.partnet-names li').click(function(){
+              $('.partnet-names li').removeClass('selected')
+              $(this).addClass('selected')
+              var i = $('.partnet-names li').index(this)
+              $('.partnet-descs li').removeClass('selected')
+              $('.partnet-descs li').eq(i).addClass('selected')
+              location.hash = i
+            })
+            var index = location.hash.slice(1) || 0
+            $('.partnet-names li').eq(index).click()
+          })()
         </script>
       </div>
     </div>
