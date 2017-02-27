@@ -68,4 +68,12 @@ theme: guoren
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: ftpsync
+  host: 101.37.36.2
+  user: ftpuser
+  pass: Lyc28973
+  remote: /
+  port: 21
+  ignore: ignore
+  connections: 1
+  verbose: false
